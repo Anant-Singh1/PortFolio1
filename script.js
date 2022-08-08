@@ -7,6 +7,8 @@ const image3 = document.getElementById('image3');
 const textBox = document.getElementById('text-box');
 const cardText = document.getElementsByClassName('title');
 const Card = document.getElementsByClassName('card');
+const CardImg = document.querySelector('.card img');
+
 
 //Dark Mode Styles
 function darkMode() {
@@ -20,7 +22,9 @@ function darkMode() {
     image3.src = 'img/undraw_task_list_dark.svg';
     cardText[0].style.color = 'white';
     cardText[0].style.backgroundColor = '#9641ff';
-    Card[0].style.background = 'linear-gradient(to right bottom,rgba(255,255,255,0.7),rgba(255,255,255,0.3))'
+    const Card = document.getElementsByClassName('card');
+    CardImg.style.background = 'linear-gradient(-45deg, #6c63ff, #39FF14, #9641ff, #03dac5)';
+    Card[0].style.background = 'linear-gradient(to right bottom,rgba(255,255,255,0.7),rgba(255,255,255,0.3))';
 }
 
 function lightMode() {
@@ -35,7 +39,7 @@ function lightMode() {
     cardText[0].style.color = 'black';
     Card[0].style.background = 'white';
     cardText[0].style.backgroundColor = 'white';
-
+    CardImg.style.background = 'linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab)';
 }
 
 //Switch Theme Dynamically

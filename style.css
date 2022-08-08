@@ -76,10 +76,11 @@ section {
 
 .card img {
   height: 24rem;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   width: 17rem;
-  z-index: 2;
+  /* z-index: 2; */
   transition: all 0.75s ease-out;
-  border-radius: 35%;
+  border-radius: 50%;
 }
 
 
